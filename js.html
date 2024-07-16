@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Topics</title>
+</head>
+<body>
+      
+    <script>
+        //Array Manipulation
+
+            var arr = [1,2,3,4,5];
+            var init={};
+            console.log("1) Array creation:"+arr)
+            console.log("Array intilaization:")
+            for(let i=0;i<arr.length;i++){
+                console.log(i,arr[i]);
+            }
+            console.log("2) Array Manipulation:");
+            console.log("Add element 6 :");
+            arr.push(6);
+            console.log(arr)
+            console.log("pop element 6 :");
+            arr.pop(6);
+            console.log(arr);
+            console.log("shift 0 :")
+            arr.shift(0);
+            console.log(arr)
+            console.log("shift 1 :")
+            arr.unshift(1);
+            console.log(arr)
+            console.log("3) Array Searching")
+            console.log("IndexOf 3 :")
+            console.log(arr.indexOf(3));
+            console.log("Array includes:")
+            console.log(arr.includes(2));
+            console.log("4) Array filtering : ")
+            console.log(arr.filter(checknum));
+            function checknum(arr){
+                return arr>2;
+            }
+            console.log("5) Mapping :")
+            console.log(arr.map(num));
+            function num(arr){
+                return arr*2;
+            }
+
+
+    </script>
+
+</body>
+</html>
+ 
